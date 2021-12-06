@@ -1,9 +1,9 @@
 ### How to start the app :
 
-# 1.clone project
+- clone project.
 
-# 2.open terminal and cd project directory
+- open terminal and cd project directory.
 
-# 3.yarn install
+- yarn install.
 
-# 4.yarn start
+- yarn start.

@@ -1,5 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import Card from './components/Card';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Container from './components/styles/container.styled';
 import GlobalStyles from './components/styles/global';
@@ -28,6 +29,7 @@ function App() {
             <Card index={index} key={item.id} {...item} />
           ))}
         </Container>
+        <Footer />
       </>
     </ThemeProvider>
   );

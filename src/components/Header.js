@@ -1,11 +1,13 @@
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router';
 import Button from './styles/button.styled';
 import Container from './styles/container.styled';
 import Flex from './styles/flex.styled';
 import { Image, Logo, Nav, StyledHeader } from './styles/header.styled';
-
+import { ACTION_TYPE } from '../store/types';
 const Header = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   return (
     <StyledHeader>
       <Container>
@@ -24,7 +26,11 @@ const Header = () => {
               you engage in genuine discussion.
             </p>
 
-            <Button bgColor="#ff0099" color="#fff">
+            <Button
+              bgColor="#ff0099"
+              color="#fff"
+              onClick={() => dispatch({ type: ACTION_TYPE.INC, payload: 6 })}
+            >
               Get Started For Free
             </Button>
           </div>

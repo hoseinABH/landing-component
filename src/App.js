@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import GlobalStyles from './components/styles/global';
 import Home from './screens/Home';
+import Login from './screens/Login';
 
 const theme = {
   colors: {
@@ -25,6 +26,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="auth" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>

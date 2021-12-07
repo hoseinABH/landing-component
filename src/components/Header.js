@@ -1,15 +1,17 @@
+import { useNavigate } from 'react-router';
 import Button from './styles/button.styled';
 import Container from './styles/container.styled';
 import Flex from './styles/flex.styled';
 import { Image, Logo, Nav, StyledHeader } from './styles/header.styled';
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <StyledHeader>
       <Container>
         <Nav>
           <Logo src="./images/logo.svg" alt="" />
-          <Button>Try It Free</Button>
+          <Button onClick={() => navigate('auth')}>Try It Free</Button>
         </Nav>
 
         <Flex>

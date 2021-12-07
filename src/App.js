@@ -1,10 +1,9 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import Card from './components/Card';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Container from './components/styles/container.styled';
 import GlobalStyles from './components/styles/global';
-import content from './content';
+import Home from './screens/Home';
 
 const theme = {
   colors: {
@@ -21,16 +20,14 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <>
+      <BrowserRouter>
         <GlobalStyles />
         <Header />
-        <Container>
-          {content.map((item, index) => (
-            <Card index={index} key={item.id} {...item} />
-          ))}
-        </Container>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
         <Footer />
-      </>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

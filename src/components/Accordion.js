@@ -33,6 +33,7 @@ const AccordionSection = styled.details`
     list-style: none;
     padding: 15px;
     user-select: none;
+    outline: none;
   }
   :first-child {
     border-top-left-radius: 15px;

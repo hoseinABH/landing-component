@@ -1,8 +1,11 @@
-import styled from 'styled-components';
 import FeatureCard from '../components/FeatureCard';
 import {
   CardRowContainer,
   FeaturedSection,
+  PodcastCard,
+  PodcastContent,
+  PodcastImage,
+  PodcastsRow,
 } from '../components/styles/featured.styled';
 
 // data
@@ -58,13 +61,12 @@ const Features = () => {
               alt=""
             />
             <PodcastContent>
-              <span>Show</span>
-              <h1>Designing in the browser</h1>
+              <span>Podcast</span>
+              <h1>Podcast The CSS Podcast</h1>
               <p>
-                Designer Vs Developer artwork Designing in the browser Designing
-                in the Browser explores the intersection of design and front-end
-                development, teaching you how to build beautiful UIs with modern
-                web standards in mind.
+                Cascading Style Sheets (CSS) is the web’s core styling language.
+                For web developers, It’s one of the quickest technologies to get
+                started.
               </p>
             </PodcastContent>
           </PodcastCard>
@@ -73,58 +75,5 @@ const Features = () => {
     </>
   );
 };
-
-const PodcastsRow = styled.div`
-  margin-top: clamp(2.375rem, 1.98rem + 1.96vw, 3.75rem);
-  display: flex;
-  max-width: 100%;
-  width: 1200px;
-  height: 100%;
-  justify-content: center;
-  transition-timing-function: linear;
-  @media (max-width: 800px) {
-    flex-direction: column;
-    align-items: center;
-  }
-  & > a {
-    margin: 15px 10px;
-  }
-`;
-
-const PodcastCard = styled.a`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition-duration: 500ms;
-  :hover {
-    transform: scale(1.02);
-  }
-`;
-
-const PodcastImage = styled.img`
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  border-radius: 25px;
-`;
-
-const PodcastContent = styled.div`
-  display: flex;
-  position: absolute;
-  bottom: 20px;
-  padding: 25px;
-  flex-direction: column;
-  align-items: flex-start;
-  color: white;
-  p {
-    text-align: justify;
-    opacity: 1;
-  }
-
-  @media (max-width: 1150px) {
-    font-size: 12px;
-    bottom: 5px;
-  }
-`;
 
 export default Features;

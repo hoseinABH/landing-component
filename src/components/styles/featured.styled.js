@@ -48,3 +48,57 @@ export const CardRowContainer = styled.div`
     border-radius: 25px;
   }
 `;
+
+export const PodcastsRow = styled.div`
+  margin-top: clamp(2.375rem, 1.98rem + 1.96vw, 3.75rem);
+  display: flex;
+  max-width: 100%;
+  width: 1200px;
+  height: 100%;
+  justify-content: center;
+  transition-timing-function: linear;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  & > a {
+    margin: 15px 10px;
+  }
+`;
+
+export const PodcastCard = styled.a`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  word-break: break-all;
+  transition-duration: 500ms;
+  :hover {
+    transform: scale(1.02);
+  }
+`;
+
+export const PodcastImage = styled.img`
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 25px;
+`;
+
+export const PodcastContent = styled.div`
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  padding: 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  p {
+    text-align: justify;
+    opacity: 1;
+  }
+
+  @media (max-width: 1150px) {
+    font-size: 12px;
+    bottom: 5px;
+  }
+`;

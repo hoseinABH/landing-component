@@ -3,7 +3,7 @@ import { IconContext } from 'react-icons';
 import { FiChevronDown } from 'react-icons/fi';
 import styled from 'styled-components';
 const Accordion = ({ question, answer }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   return (
     <IconContext.Provider value={{ color: '#3740ff' }}>
       <AccordionSection open={open} onToggle={(e) => setOpen(e.target.open)}>

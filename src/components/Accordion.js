@@ -66,6 +66,10 @@ const IconButton = styled.span`
   :hover {
     background-color: #f8f9fa;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    right: 5;
+  }
 `;
 
 const AccordionContent = styled.div`

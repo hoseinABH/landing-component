@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
@@ -22,6 +23,12 @@ const Logo = styled.img`
     margin-bottom: 40px;
   }
 `;
+const StyledLink = styled(Link)`
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    margin-top: 20px;
+    color: #3740ff;
+  }
+`;
 
 const Image = styled.img`
   width: 375px;
@@ -31,4 +38,4 @@ const Image = styled.img`
   }
 `;
 
-export { StyledHeader, Nav, Logo, Image };
+export { StyledHeader, Nav, Logo, Image, StyledLink };

@@ -26,6 +26,10 @@ const ContactContainer = styled.section`
   margin: 50px 0;
   display: flex;
   justify-content: center;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    padding: 20px;
+  }
 `;
 const Form = styled.form`
   max-width: 680px;
@@ -37,6 +41,10 @@ const Form = styled.form`
   margin: 50px 0;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    padding: 20px;
+  }
 
   input {
     padding: 10px;

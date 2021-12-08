@@ -75,7 +75,7 @@ const Form = styled.form`
     cursor: pointer;
 
     :active {
-      background-color: #3740ff;
+      filter: brightness(95%); /*awsome keyword :)*/
     }
   }
 `;

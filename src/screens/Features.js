@@ -87,7 +87,7 @@ const PodcastsRow = styled.div`
     align-items: center;
   }
   & > a {
-    margin: 15px 15px;
+    margin: 15px 10px;
   }
 `;
 

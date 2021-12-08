@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import GlobalStyles from './components/styles/global';
-import Counter from './screens/Counter';
+import Features from './screens/Features';
 import Home from './screens/Home';
 import Login from './screens/Login';
 import rootReducer from './store/rootReducer';
@@ -34,7 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="auth" element={<Login />} />
-            <Route path="counter" element={<Counter />} />
+            <Route path="features" element={<Features />} />
           </Routes>
           <Footer />
         </BrowserRouter>

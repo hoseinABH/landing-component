@@ -8,12 +8,39 @@ import { ACTION_TYPE } from '../store/types';
 const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  // Array.prototype.hoseinMap = function (callback) {
+  //   const resultArray = [];
+  //   for (let index = 0; index < this.length; index++) {
+  //     resultArray.push(callback(this[index], index, this));
+  //   }
+  //   return resultArray;
+  // };
+
+  // const sample = [{ name: 1, title: 'one' }, 2, 3, 4, 5, 6, 8].hoseinMap(
+  //   (item, index) => (isNaN(item) ? item : item + index)
+  // );
+
+  // Array.prototype.hoseinFilter = function (callback) {
+  //   const resultArray = [];
+
+  //   for (let index = 0; index < this.length; index++) {
+  //     if ((callback(this[index]), index, this)) resultArray.push(this[index]);
+  //   }
+
+  //   return resultArray;
+  // };
+
+  // const sample = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].hoseinFilter(
+  //   (item) => item % 2 === 0
+  // );
+
   return (
     <StyledHeader>
       <Container>
         <Nav>
           <Logo src="./images/logo.svg" alt="" />
-          <Button onClick={() => navigate('auth')}>Try It Free</Button>
+          <Button onClick={() => navigate('features')}>Try It Free</Button>
         </Nav>
 
         <Flex>

@@ -40,6 +40,7 @@ const CardContainer = styled.a`
   text-decoration: none;
   position: relative;
   max-width: 25rem;
+  width: 100%;
   min-width: 23rem;
   height: 100%;
   word-break: break-all;
@@ -78,12 +79,12 @@ const CardImage = styled.img`
 `;
 
 const CardContent = styled.div`
-  padding: 0 15px;
   margin-top: 10px;
+  padding-right: 25px;
   p {
-    text-align: justify;
     font-size: 13px;
     color: #000;
+    text-align: justify;
   }
 `;
 

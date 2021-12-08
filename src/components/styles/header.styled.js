@@ -17,6 +17,7 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.img`
+  cursor: pointer;
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     margin-bottom: 40px;
   }

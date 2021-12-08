@@ -1,13 +1,10 @@
-import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router';
 import Button from './styles/button.styled';
 import Container from './styles/container.styled';
 import Flex from './styles/flex.styled';
 import { Image, Logo, Nav, StyledHeader } from './styles/header.styled';
-import { ACTION_TYPE } from '../store/types';
 const Header = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
 
   // Array.prototype.hoseinMap = function (callback) {
   //   const resultArray = [];
@@ -39,7 +36,7 @@ const Header = () => {
     <StyledHeader>
       <Container>
         <Nav>
-          <Logo src="./images/logo.svg" alt="" />
+          <Logo src="./images/logo.svg" alt="" onClick={() => navigate('/')} />
           <Button onClick={() => navigate('features')}>Try It Free</Button>
         </Nav>
 
@@ -56,7 +53,7 @@ const Header = () => {
             <Button
               bgColor="#ff0099"
               color="#fff"
-              onClick={() => dispatch({ type: ACTION_TYPE.INC, payload: 6 })}
+              onClick={() => navigate('faq')}
             >
               Get Started For Free
             </Button>

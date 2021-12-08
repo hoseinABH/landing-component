@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import GlobalStyles from './components/styles/global';
+import Faq from './screens/Faq';
 import Features from './screens/Features';
 import Home from './screens/Home';
 import Login from './screens/Login';
@@ -35,6 +36,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="auth" element={<Login />} />
             <Route path="features" element={<Features />} />
+            <Route path="faq" element={<Faq />} />
           </Routes>
           <Footer />
         </BrowserRouter>

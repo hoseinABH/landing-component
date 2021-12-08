@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
 import Button from './styles/button.styled';
 import Container from './styles/container.styled';
 import Flex from './styles/flex.styled';
@@ -38,6 +39,7 @@ const Header = () => {
         <Nav>
           <Logo src="./images/logo.svg" alt="" onClick={() => navigate('/')} />
           <Button onClick={() => navigate('features')}>Try It Free</Button>
+          <Link to="contact-us">Contact Us</Link>
         </Nav>
 
         <Flex>
